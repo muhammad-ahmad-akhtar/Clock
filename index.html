@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Classic Silver Clock</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="clock" id="clock">
+
+    <!-- Clock Hands -->
+    <div class="hand hour-hand" id="hourHand"></div>
+    <div class="hand minute-hand" id="minuteHand"></div>
+    <div class="hand second-hand" id="secondHand"></div>
+    <!-- Center pivot -->
+    <div class="center-point"></div>
+    
+  </div>
+  <script rel="javascript" src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date, Time, and Greeting</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        #greeting {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        #date-time {
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="greeting"></div>
+        <div id="date-time"></div>
+    </div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const date = now.toLocaleDateString(undefined, options);
+            const time = now.toLocaleTimeString();
+            document.getElementById('date-time').textContent = `${date} - ${time}`;
+
+            const hour = now.getHours();
+            let greeting;
+            if (hour < 12) {
+                greeting = "Good morning!";
+            } else if (hour < 18) {
+                greeting = "Good afternoon!";
+            } else {
+                greeting = "Good evening!";
+            }
+            document.getElementById('greeting').textContent = greeting;
+        }
+
+        // Update date, time, and greeting every second
+        setInterval(updateDateTime, 1000);
+
+        // Initial call to display immediately when the page loads
+        updateDateTime();
+    </script>
+</body>
+</html> -->

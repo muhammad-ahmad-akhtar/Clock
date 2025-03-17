@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c7dacc;
+    font-family: sans-serif;
+  }
+
+  .clock {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 12px solid #ccc;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .center-point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateX(-50%);
+  }
+
+  .hour-hand {
+    width: 6px;
+    height: 70px;
+    background: #000;
+    border-radius: 6px;
+  }
+
+  .minute-hand {
+    width: 4px;
+    height: 100px;
+    background: #000;
+    border-radius: 4px;
+  }
+
+  .second-hand {
+    width: 2px;
+    height: 110px;
+    background: red;
+    border-radius: 2px;
+  }
+
+  /* Hour marks (short ticks around the clock) */
+  .tick {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background: #000;
+    top: 10px; /* Start near the top edge */
+    left: 50%;
+    transform-origin: bottom center;
+  }
+
+  /* Number styling (1–12) */
+  .number {
+    position: absolute;
+    font-family: cursive;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-50%, -50%);
+  }
